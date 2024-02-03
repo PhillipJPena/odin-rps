@@ -1,6 +1,4 @@
-const radioRock = document.querySelector("#rock");
-const radioPaper = document.querySelector("#paper");
-const radioScissors = document.querySelector("#scissors");
+let playBtn = document.getElementById("play-btn");
 
 const CHOICES = ["rock", "paper", "scissors"];
 // let playerSelection = prompt("Choose rock, paper, or scissors");
@@ -43,11 +41,7 @@ function getOutcome(player, cpu) {
   }
 }
 
-// validate that player choose rock, paper or scissors
-/* while (!CHOICES.includes(playerSelection)) {
-  playerSelection = prompt("Choose must be rock, paper, or scissors");
-} */
-
-console.log(playerSelection);
-console.log(computerSelection);
-console.log(getOutcome(playerSelection, computerSelection));
+//event listeners
+playBtn.addEventListener("click", function (e) {
+  console.log(e.target);
+});
