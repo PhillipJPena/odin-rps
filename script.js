@@ -1,3 +1,7 @@
+const radioRock = document.querySelector("#rock");
+const radioPaper = document.querySelector("#paper");
+const radioScissors = document.querySelector("#scissors");
+
 const CHOICES = ["rock", "paper", "scissors"];
 // let playerSelection = prompt("Choose rock, paper, or scissors");
 let computerSelection = getComputerChoice();
