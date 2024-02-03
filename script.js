@@ -1,6 +1,7 @@
 const CHOICES = ["rock", "paper", "scissors"];
 let playerSelection = prompt("Choose rock, paper, or scissors");
 let computerSelection = getComputerChoice();
+
 // When called returns "Rock", "Paper", or "Scissors". Output is random
 function getComputerChoice() {
   let randomize = Math.floor(Math.random() * CHOICES.length);
